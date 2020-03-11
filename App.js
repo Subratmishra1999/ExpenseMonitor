@@ -3,6 +3,7 @@ import { Text,View, Image, StyleSheet } from 'react-native'
 import {Button} from 'native-base';
 import register from './Components/register'
 export default class App extends Component {
+        
         render() {
                 return (
                         <View style={{flex:1,flexDirection:'column'}}>

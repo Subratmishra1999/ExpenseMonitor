@@ -5,16 +5,16 @@ import register from './Components/register'
 // import { Router, Stack, Scene, Actions } from 'react-native-router-flux'
 import { Router, Scene } from 'react-native-router-flux'
 import homePage from './Components/homePage';
-
+import signIn from './Components/signIn'
 
 export default class App extends Component {
         render() {
                 return (
                         <Router>
                                 <Scene key="root">
-                                        <Scene key="homePage" component={homePage} title="Expense Monitor"   />
-                                        <Scene key="register" component={register} title="register" />
-
+                                        <Scene key="homePage" component={homePage} title="Expense Monitor"/>
+                                        <Scene key="register" component={register} title="Sign up" />
+                                        <Scene key="signIn" component={signIn} title="Sign in" />
                                 </Scene>
                         </Router>
                 )

@@ -4,7 +4,7 @@ import { Form, Item, Input, Content } from 'native-base'
 import { Button } from 'react-native-paper'
 
 
-export default class register extends Component {
+export default class signIn extends Component {
         render() {
                 return (
                         <View>
@@ -16,13 +16,7 @@ export default class register extends Component {
                                                 <Input placeholder="Username" />
                                         </Item>
                                         <Item>
-                                                <Input placeholder="Mob.no:" />
-                                        </Item>
-                                        <Item>
                                                 <Input placeholder="Password" />
-                                        </Item>
-                                        <Item>
-                                                <Input placeholder="Confirm Password" />
                                         </Item>
                                         <Button mode="contained" onPress={() => { console.log("form submitted") }} >
                                                 <Text>Submit</Text>

@@ -12,11 +12,11 @@ export default class homePage extends Component {
                                         />
                                 </View>
                                 <View style={styles.view}>
-                                        <Button  success style={styles.signin}  mode="contained" onPress={() => console.log('Pressed')}>
+                                        <Button  success style={styles.signin}  mode="contained" onPress={() => {Actions.signIn()}}>
                                                 <Text>Sign in</Text>
                                         </Button>
                                         <Button  success style={styles.signin}  mode="contained" onPress={() => {Actions.register()}}>
-                                                <Text>Register</Text>
+                                                <Text>Sign up</Text>
                                         </Button>
                                 </View>
                                 

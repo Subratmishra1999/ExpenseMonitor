@@ -20,9 +20,7 @@ export default class userHomePage extends Component {
                                                 <Button>
                                                         <Text>History</Text>
                                                 </Button>
-                                                <Button>
-                                                        <Text></Text>
-                                                </Button>
+                                                
                                         </FooterTab>
                                 </Footer>
                                 </Container>

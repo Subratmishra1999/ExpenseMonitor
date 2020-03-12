@@ -1,14 +1,32 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import {  View } from 'react-native'
 import { Container, Header, Content, Footer, FooterTab, Button, Text } from 'native-base';
 
 
 export default class userHomePage extends Component {
         render() {
                 return (
-                        <View>
-                                <Text></Text>
-                        </View>
+                        
+                        <Container>
+                                <Content></Content>
+                                <Footer>
+                                        <FooterTab>
+                                                <Button>
+                                                        <Text>Home</Text>
+                                                </Button>
+                                                <Button>
+                                                        <Text>Add</Text>
+                                                </Button>
+                                                <Button>
+                                                        <Text>History</Text>
+                                                </Button>
+                                                <Button>
+                                                        <Text></Text>
+                                                </Button>
+                                        </FooterTab>
+                                </Footer>
+                                </Container>
+                       
                 )
         }
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
 import { Form, Item, Input, Content } from 'native-base'
 import { Button } from 'react-native-paper'
+import { Actions } from 'react-native-router-flux'
 
 
 export default class signIn extends Component {
@@ -18,7 +19,7 @@ export default class signIn extends Component {
                                         <Item>
                                                 <Input placeholder="Password" />
                                         </Item>
-                                        <Button mode="contained" onPress={() => { console.log("form submitted") }} >
+                                        <Button mode="contained" onPress={() => { Actions.userHomePage() }} >
                                                 <Text>Submit</Text>
                                         </Button>
                                 </Form>

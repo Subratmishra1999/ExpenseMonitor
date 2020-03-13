@@ -1,37 +1,49 @@
 import React, { Component } from 'react'
-import {  View } from 'react-native'
-import { Container, Header, Content, Footer, FooterTab, Button, Text,Icon } from 'native-base';
-import { Actions } from 'react-native-router-flux';
-// import { Icon } from 'react-native-paper/lib/typescript/src/components/Avatar/Avatar';
+import { Text, View,StyleSheet,Image } from 'react-native'
+import {Button} from 'native-base'
+import { Actions } from 'react-native-router-flux'
 
-
-export default class userHomePage extends Component {
+export default class homePage extends Component {
         render() {
                 return (
-                        
-                        <Container>
-                                <Content>
-                                        <Text>Hello</Text>
-                                </Content>
-                                <Footer>
-                                        <FooterTab>
-                                                <Button active vertical onPress={()=>{Actions.userHomePage()}}>
-                                                        <Icon name="home"/>
-                                                        <Text>Home</Text>
-                                                </Button>
-                                                <Button vertical>
-                                                        <Icon name="md-add"/>
-                                                        <Text>Add</Text>
-                                                </Button>
-                                                <Button vertical>
-                                                        <Icon name="cloud"/>
-                                                        <Text>History</Text>
-                                                </Button>
-                                                
-                                        </FooterTab>
-                                </Footer>
-                                </Container>
-                       
+                        <View style={{flex:1,flexDirection:'column'}}>
+                                <View style={styles.imageview}>
+                                        <Image style={styles.image} source={require('../money.gif')}
+                                        />
+                                </View>
+                                <View style={styles.view}>
+                                        <Button  success style={styles.signin}  mode="contained" onPress={() => {Actions.signIn()}}>
+                                                <Text>Sign in</Text>
+                                        </Button>
+                                        <Button  success style={styles.signin}  mode="contained" onPress={() => {Actions.register()}}>
+                                                <Text>Sign up</Text>
+                                        </Button>
+                                </View>
+                                
+
+                        </View>
                 )
         }
 }
+
+const styles = StyleSheet.create({
+        image: {
+                width: 200,
+                height: 200,
+                alignSelf: "center",
+        },
+        imageview: {
+                flex: 2,
+
+        },
+        view:{
+                flex:2,
+                flexDirection:"row",
+                justifyContent:"space-around",
+
+        },
+        signin:{
+                width:100,
+                justifyContent:"center"
+        }
+})

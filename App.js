@@ -6,7 +6,7 @@ import register from './Components/register'
 import { Router, Scene } from 'react-native-router-flux'
 import homePage from './Components/home';
 import signIn from './Components/signIn'
-import userHomePage from './Components/userHomePage';
+import userHomePage from './Components/homePage';
 
 export default class App extends Component {
         render() {

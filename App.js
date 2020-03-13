@@ -4,7 +4,7 @@ import { Button } from 'native-base';
 import register from './Components/register'
 // import { Router, Stack, Scene, Actions } from 'react-native-router-flux'
 import { Router, Scene } from 'react-native-router-flux'
-import homePage from './Components/homePage';
+import homePage from './Components/home';
 import signIn from './Components/signIn'
 import userHomePage from './Components/userHomePage';
 

@@ -19,7 +19,7 @@ export default class signIn extends Component {
                                         <Item>
                                                 <Input placeholder="Password" />
                                         </Item>
-                                        <Button mode="contained" onPress={() => { Actions.userHomePage() }} >
+                                        <Button mode="contained" onPress={() => { Actions.homePage() }} >
                                                 <Text>Submit</Text>
                                         </Button>
                                 </Form>

@@ -16,7 +16,7 @@ export default class App extends Component {
                                         <Scene key="homePage" component={homePage} title="Expense Monitor"/>
                                         <Scene key="register" component={register} title="Sign up" />
                                         <Scene key="signIn" component={signIn} title="Sign in" />
-                                        <Scene key="userHomePage" component={userHomePage} title="Analytics" />
+                                        <Scene key="homePage" component={userHomePage} title="Analytics" />
                                 </Scene>
                         </Router>
                 )

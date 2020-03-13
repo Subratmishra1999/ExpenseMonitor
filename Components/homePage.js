@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {  View } from 'react-native'
 import { Container, Header, Content, Footer, FooterTab, Button, Text,Icon } from 'native-base';
+import { Actions } from 'react-native-router-flux';
 // import { Icon } from 'react-native-paper/lib/typescript/src/components/Avatar/Avatar';
 
 
@@ -9,10 +10,12 @@ export default class userHomePage extends Component {
                 return (
                         
                         <Container>
-                                <Content></Content>
+                                <Content>
+                                        <Text>Hello</Text>
+                                </Content>
                                 <Footer>
                                         <FooterTab>
-                                                <Button vertical>
+                                                <Button active vertical onPress={()=>{Actions.userHomePage()}}>
                                                         <Icon name="home"/>
                                                         <Text>Home</Text>
                                                 </Button>

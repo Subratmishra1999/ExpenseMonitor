@@ -4,8 +4,9 @@ import { Button } from 'native-base';
 import register from './Components/register'
 // import { Router, Stack, Scene, Actions } from 'react-native-router-flux'
 import { Router, Scene } from 'react-native-router-flux'
-import homePage from './Components/home';
+import home from './Components/home';
 import signIn from './Components/signIn'
+import homePage from './Components/homePage';
 import userHomePage from './Components/homePage';
 
 export default class App extends Component {
@@ -13,10 +14,11 @@ export default class App extends Component {
                 return (
                         <Router>
                                 <Scene key="root">
-                                        <Scene key="homePage" component={homePage} title="Expense Monitor"/>
+                                        <Scene key="home" component={home} title="Expense Monitor"/>
                                         <Scene key="register" component={register} title="Sign up" />
                                         <Scene key="signIn" component={signIn} title="Sign in" />
-                                        <Scene key="homePage" component={userHomePage} title="Analytics" />
+                                        <Scene key="homePage" component={homePage} title="Analytics" />
+                                        <Scene key="userHomePage" component={userHomePage} title="Analytics" /> 
                                 </Scene>
                         </Router>
                 )

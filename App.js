@@ -13,7 +13,7 @@ export default class App extends Component {
                 return (
                         <Router>
                                 <Scene key="root">
-                                        <Scene key="homePage" component={homePage} title="Expense Monitor"/>
+                                        <Scene key= "homePage" component={homePage} title="Expense Monitor"/>
                                         <Scene key="register" component={register} title="Sign up" />
                                         <Scene key="signIn" component={signIn} title="Sign in" />
                                         <Scene key="userHomePage" component={userHomePage} title="Analytics" />

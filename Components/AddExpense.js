@@ -7,6 +7,6 @@ export default class AddExpense extends Component {
                         <View>
                                 <Text> AddExpense </Text>
                         </View>
-                )
+                ) 
         }
 }
